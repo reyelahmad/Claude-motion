@@ -15,6 +15,7 @@ import {
   getShowcaseDuration,
   sceneFrames,
 } from "./compositions/Showcase/timeline";
+import { GoogleLogo } from "./compositions/GoogleLogo/GoogleLogo";
 // @new-composition-imports (scripts/new-composition.mjs inserts imports above this line)
 
 // Each <Composition> appears in the Studio sidebar. Its `id` is what you render:
@@ -128,6 +129,15 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={secondsToFrames(3, FPS)}
         />
       </Folder>
+
+      <Composition
+        id="GoogleLogo"
+        component={GoogleLogo}
+        defaultProps={{ wordmark: "Google" }}
+        fps={FPS}
+        {...FORMATS.portrait}
+        durationInFrames={secondsToFrames(2, FPS)}
+      />
 
       {/* @new-compositions (scripts/new-composition.mjs inserts compositions above this line) */}
     </>

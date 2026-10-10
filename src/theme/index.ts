@@ -16,9 +16,16 @@ loadFont({
   weight: "300 700",
 });
 
+loadFont({
+  family: "Google Sans",
+  url: staticFile("fonts/GoogleSans-Variable-latin.woff2"),
+  weight: "400 700",
+});
+
 export const FONTS = {
   body: "Inter, system-ui, sans-serif",
   display: "'Space Grotesk', Inter, system-ui, sans-serif",
+  google: "'Google Sans', Inter, system-ui, sans-serif",
 } as const;
 
 export const COLORS = {
