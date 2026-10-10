@@ -4,7 +4,7 @@ Programmatic motion graphics with [Remotion](https://www.remotion.dev) **4.0.534
 
 ## Requirements
 
-- Node.js 18 or newer (tested on 22).
+- Node.js 20 or 22 LTS recommended (minimum 18.18; tested on 22).
 - npm.
 - On first render, Remotion downloads Chrome Headless Shell automatically.
 

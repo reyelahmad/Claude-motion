@@ -7,7 +7,7 @@
   "private": true,
   "packageManager": "npm@10.9.4",
   "engines": {
-    "node": ">=18"
+    "node": ">=18.18.0"
   },
   "scripts": {
     "dev": "remotion studio",
