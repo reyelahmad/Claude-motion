@@ -1,0 +1,45 @@
+{
+  "name": "claude-motion",
+  "version": "1.0.0",
+  "description": "Programmatic motion graphics videos with Remotion, built for AI coding agents",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "packageManager": "npm@10.9.4",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "new": "node scripts/new-composition.mjs",
+    "render": "remotion render src/index.ts Showcase out/showcase.mp4",
+    "render:portrait": "remotion render src/index.ts Showcase-Portrait out/showcase-portrait.mp4",
+    "render:still": "remotion still src/index.ts Showcase out/showcase.png --frame=45",
+    "compositions": "remotion compositions src/index.ts",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/shapes": "4.0.534",
+    "@remotion/transitions": "4.0.534",
+    "@remotion/zod-types": "4.0.534",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.534",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.534",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  }
+}
