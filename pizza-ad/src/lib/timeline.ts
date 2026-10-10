@@ -124,18 +124,25 @@ export const buildTimeline = ({
         cueOffsetSeconds(cue, lineSeconds[cue.line - 1], wordsFor(cue.line)),
     );
 
-  const hookBubble = lines[0].start;
-  const offerCard = lines[2].start;
+  const n = TIMING.nudge;
+  const hookBubble = Math.max(
+    TIMING.typingFrames,
+    lines[0].start + n.hookBubble,
+  );
+  const offerCard = lines[2].start + n.offerCard;
   // The whip needs a few frames after the card arrives; the price must follow the whip.
-  const price = Math.max(cueFrame(TIMING.cues.price), offerCard + 14);
+  const price = Math.max(cueFrame(TIMING.cues.price) + n.price, offerCard + 14);
   const whipStart = Math.max(offerCard + 6, price - 18);
   const stageStart = whipStart + Math.round(TIMING.whipFrames / 2);
   const pizza0 = whipStart + TIMING.whipFrames - 2;
-  const count = Math.max(cueFrame(TIMING.cues.count), price + 6);
-  const delivery = Math.max(cueFrame(TIMING.cues.delivery), count + 6);
-  const cta = lines[3].start;
-  const phoneGroups = TIMING.cues.phone.map((c) =>
-    Math.max(cueFrame(c), cta + 6),
+  const count = Math.max(cueFrame(TIMING.cues.count) + n.count, price + 6);
+  const delivery = Math.max(
+    cueFrame(TIMING.cues.delivery) + n.delivery,
+    count + 6,
+  );
+  const cta = Math.max(delivery + 12, lines[3].start + n.cta);
+  const phoneGroups = TIMING.cues.phone.map((c, i) =>
+    Math.max(cueFrame(c) + n.phoneGroups[i], cta + 6),
   );
   const lineEnd = lines[3].start + lines[3].frames;
   const durationInFrames = f(totalSeconds);
@@ -149,10 +156,10 @@ export const buildTimeline = ({
       typingStart: Math.max(0, hookBubble - TIMING.typingFrames),
       hookBubble,
       problemBubbles: [
-        lines[1].start,
-        lines[1].start + TIMING.problemBubbleStagger,
+        lines[1].start + n.problemBubbles,
+        lines[1].start + n.problemBubbles + TIMING.problemBubbleStagger,
       ],
-      pushInStart: lines[1].start,
+      pushInStart: lines[1].start + n.problemBubbles,
       offerCard,
       whipStart,
       stageStart,

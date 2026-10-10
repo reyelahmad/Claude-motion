@@ -51,6 +51,9 @@ Fonts come from Google Fonts. Offline? Uncomment `REMOTION_LOCAL_FONTS=1` in `.e
 | Audio levels | `MIX` |
 After changing spoken text, run `npm run voiceover` again.
 
+## Editing the animation
+See [TIMELINE.md](TIMELINE.md): every beat with its time and frame, and which setting controls it.
+
 ## Structure
 ```
 src/config.ts          All copy, colours, timings, asset paths, voice script, audio mix

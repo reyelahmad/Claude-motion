@@ -158,6 +158,24 @@ export const TIMING = {
       { line: 4, word: "দুই", occurrence: 1, fallback: 0.86 },
     ],
   },
+
+  /**
+   * Manual fine-tuning, in FRAMES (30 = 1 second). Negative = earlier.
+   * Applied on top of the voice-synced times. See TIMELINE.md.
+   */
+  nudge: {
+    hookBubble: 0,
+    problemBubbles: 0,
+    offerCard: 0,
+    /** Moves the price slam AND the whip/pizza burst that lead into it. */
+    price: 0,
+    count: 0,
+    delivery: 0,
+    /** Moves the whole call-to-action scene. */
+    cta: 0,
+    /** One value per phone-number group: 013, 46, 099, 272. */
+    phoneGroups: [0, 0, 0, 0],
+  },
 } as const;
 
 // ── Audio mix ────────────────────────────────────────────────────────────
