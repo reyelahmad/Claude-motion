@@ -22,10 +22,17 @@ loadFont({
   weight: "400 700",
 });
 
+loadFont({
+  family: "Fraunces",
+  url: staticFile("fonts/Fraunces-Variable-latin.woff2"),
+  weight: "100 900",
+});
+
 export const FONTS = {
   body: "Inter, system-ui, sans-serif",
   display: "'Space Grotesk', Inter, system-ui, sans-serif",
   google: "'Google Sans', Inter, system-ui, sans-serif",
+  serif: "Fraunces, Georgia, serif",
 } as const;
 
 export const COLORS = {

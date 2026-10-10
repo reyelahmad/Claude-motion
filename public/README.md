@@ -17,4 +17,4 @@ staticFile("images/logo.png"); // -> public/images/logo.png
 Bundled files:
 
 - `audio/ambient-pad.mp3`: a 14-second ambient pad synthesized with FFmpeg for this project. You can use it freely.
-- `fonts/Inter-Variable-latin.woff2`, `fonts/SpaceGrotesk-Variable-latin.woff2`, `fonts/GoogleSans-Variable-latin.woff2`: SIL Open Font License 1.1 (see `OFL-*.txt`).
+- `fonts/Inter-Variable-latin.woff2`, `fonts/SpaceGrotesk-Variable-latin.woff2`, `fonts/GoogleSans-Variable-latin.woff2`, `fonts/Fraunces-Variable-latin.woff2`: SIL Open Font License 1.1 (see `OFL-*.txt`).

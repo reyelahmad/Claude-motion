@@ -16,6 +16,9 @@ import {
   sceneFrames,
 } from "./compositions/Showcase/timeline";
 import { GoogleLogo } from "./compositions/GoogleLogo/GoogleLogo";
+import { CoffeePromo } from "./compositions/CoffeePromo/CoffeePromo";
+import { coffeePromoSchema } from "./compositions/CoffeePromo/schema";
+import { getCoffeePromoDuration } from "./compositions/CoffeePromo/timeline";
 // @new-composition-imports (scripts/new-composition.mjs inserts imports above this line)
 
 // Each <Composition> appears in the Studio sidebar. Its `id` is what you render:
@@ -137,6 +140,23 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         {...FORMATS.portrait}
         durationInFrames={secondsToFrames(2, FPS)}
+      />
+
+      <Composition
+        id="CoffeePromo"
+        component={CoffeePromo}
+        schema={coffeePromoSchema}
+        defaultProps={{
+          shopName: "Brew & Bean",
+          tagline: "Coffee House",
+          lines: ["Freshly roasted.", "Handcrafted.", "Made for you."],
+          offer: "20% OFF your first cup",
+          cta: "Visit us today",
+          address: "123 Main Street",
+        }}
+        fps={FPS}
+        {...FORMATS.portrait}
+        durationInFrames={getCoffeePromoDuration(FPS)}
       />
 
       {/* @new-compositions (scripts/new-composition.mjs inserts compositions above this line) */}
