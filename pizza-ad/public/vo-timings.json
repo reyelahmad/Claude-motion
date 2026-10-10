@@ -1,0 +1,162 @@
+{
+  "voice": "Cartesia sonic-3.6 female (bn), supplied file split into 4 lines. Cue-word times measured from the audio envelope (not Azure).",
+  "lines": [
+    {
+      "file": "vo-1.mp3",
+      "durationMs": 1019,
+      "words": []
+    },
+    {
+      "file": "vo-2.mp3",
+      "durationMs": 2638,
+      "words": []
+    },
+    {
+      "file": "vo-3.mp3",
+      "durationMs": 5721,
+      "words": [
+        {
+          "text": "টেনশন",
+          "offsetMs": 40,
+          "durationMs": 200
+        },
+        {
+          "text": "নাই",
+          "offsetMs": 350,
+          "durationMs": 200
+        },
+        {
+          "text": "নয়শো",
+          "offsetMs": 990,
+          "durationMs": 200
+        },
+        {
+          "text": "সত্তর",
+          "offsetMs": 1320,
+          "durationMs": 200
+        },
+        {
+          "text": "টাকায়",
+          "offsetMs": 1650,
+          "durationMs": 200
+        },
+        {
+          "text": "তিনটা",
+          "offsetMs": 1980,
+          "durationMs": 200
+        },
+        {
+          "text": "রেগুলার",
+          "offsetMs": 2310,
+          "durationMs": 200
+        },
+        {
+          "text": "পিৎজা",
+          "offsetMs": 2810,
+          "durationMs": 200
+        },
+        {
+          "text": "সাথে",
+          "offsetMs": 3440,
+          "durationMs": 200
+        },
+        {
+          "text": "ফ্রি",
+          "offsetMs": 3670,
+          "durationMs": 200
+        },
+        {
+          "text": "হোম",
+          "offsetMs": 4100,
+          "durationMs": 200
+        },
+        {
+          "text": "ডেলিভারি",
+          "offsetMs": 4650,
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "file": "vo-4.mp3",
+      "durationMs": 4519,
+      "words": [
+        {
+          "text": "অর্ডার",
+          "offsetMs": 40,
+          "durationMs": 200
+        },
+        {
+          "text": "করতে",
+          "offsetMs": 400,
+          "durationMs": 200
+        },
+        {
+          "text": "কল",
+          "offsetMs": 840,
+          "durationMs": 200
+        },
+        {
+          "text": "করো",
+          "offsetMs": 1000,
+          "durationMs": 200
+        },
+        {
+          "text": "শূন্য",
+          "offsetMs": 1370,
+          "durationMs": 200
+        },
+        {
+          "text": "এক",
+          "offsetMs": 1700,
+          "durationMs": 200
+        },
+        {
+          "text": "তিন",
+          "offsetMs": 1900,
+          "durationMs": 200
+        },
+        {
+          "text": "চার",
+          "offsetMs": 2490,
+          "durationMs": 200
+        },
+        {
+          "text": "ছয়",
+          "offsetMs": 2780,
+          "durationMs": 200
+        },
+        {
+          "text": "শূন্য",
+          "offsetMs": 2930,
+          "durationMs": 200
+        },
+        {
+          "text": "নয়",
+          "offsetMs": 3170,
+          "durationMs": 200
+        },
+        {
+          "text": "নয়",
+          "offsetMs": 3270,
+          "durationMs": 200
+        },
+        {
+          "text": "দুই",
+          "offsetMs": 3580,
+          "durationMs": 200
+        },
+        {
+          "text": "সাত",
+          "offsetMs": 3850,
+          "durationMs": 200
+        },
+        {
+          "text": "দুই",
+          "offsetMs": 4100,
+          "durationMs": 200
+        }
+      ]
+    }
+  ]
+}

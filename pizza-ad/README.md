@@ -18,6 +18,10 @@ npm install
 
 If a required file is missing, Studio and the renderer stop with a message naming it.
 
+## Current voiceover
+`public/vo-1.mp3` … `vo-4.mp3` were cut from the supplied Cartesia recording (`source-audio/voiceover-cartesia-original.wav`) at the pauses between lines. `public/vo-timings.json` holds the times of the sync words (price, count, delivery, phone groups), measured from the audio. To fine-tune a beat, use `TIMING.nudge` in `src/config.ts` (see TIMELINE.md).
+Running `npm run voiceover` (Azure) **replaces** these files.
+
 ## 3. Generate the voiceover (Azure, female voice `bn-BD-NabanitaNeural`)
 Create `pizza-ad/.env` (it is git-ignored, and Remotion never bundles it):
 ```ini
